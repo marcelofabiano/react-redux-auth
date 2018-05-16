@@ -1,5 +1,5 @@
-export const LOGIN_REQUEST = 'LOGIN_REQUEST'
+export const AC_LOGIN_REQUEST = 'AC_LOGIN_REQUEST'
 
-export const LOGIN_SUCCESS = 'LOGIN_SUCCESS'
+export const AC_LOGIN_SUCCESS = 'AC_LOGIN_SUCCESS'
 
-export const LOGIN_FAIL = 'LOGIN_FAIL'
+export const AC_LOGIN_FAIL = 'AC_LOGIN_FAIL'

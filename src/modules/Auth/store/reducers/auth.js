@@ -1,4 +1,4 @@
-import { LOGIN_REQUEST, LOGIN_SUCCESS, LOGIN_FAIL } from '../actionTypes'
+import { AC_LOGIN_REQUEST, AC_LOGIN_SUCCESS, AC_LOGIN_FAIL } from '../actionTypes'
 
 const INITIAL_STATE =  {
   credentials: {
@@ -15,12 +15,12 @@ const INITIAL_STATE =  {
 
 const auth = (state = INITIAL_STATE, action) => {
   switch(action.type) {
-    case LOGIN_REQUEST:
+    case AC_LOGIN_REQUEST:
       console.log(action.credentials)
       return {...state}
-    case LOGIN_SUCCESS:
+    case AC_LOGIN_SUCCESS:
       return {...state}
-    case LOGIN_FAIL:
+    case AC_LOGIN_FAIL:
       return {...state}
     default:
       return state

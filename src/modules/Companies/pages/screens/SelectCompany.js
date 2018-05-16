@@ -1,9 +1,13 @@
 import React, { Component } from 'react'
 
+import Authenticated from '../../../Auth/services/Authenticated'
+
 class SelectCompany extends Component {
   render() {
     return (
-      <h1>Select Company</h1>
+      <Authenticated>
+        <h1>Select Company</h1>
+      </Authenticated>
     )
   }
 }

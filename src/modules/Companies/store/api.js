@@ -1,15 +1,15 @@
 import axios from 'axios'
 
-import { ENDPOINT, BASE_URL, TIMEOUT } from '../../../config/api'
+import { API_ENDPOINT, API_BASE_URL, API_TIMEOUT } from '../../../config/api'
 
-export const COMPANIES = ENDPOINT+'companies' // GET
-export const COMPANY = ENDPOINT+'companies/{id}' // GET
-export const COMPANY_CREATE = ENDPOINT+'companies' // POST
-export const COMPANY_UPDATE = ENDPOINT+'companies/{id]' // PUT
-export const COMPANY_ARCHIVE = ENDPOINT+'companies/{id}/archive' // PUT
-export const COMPANY_DESTROY = ENDPOINT+'companies/{id}' // DELETE
+export const EP_COMPANIES = API_ENDPOINT+'companies' // GET
+export const EP_COMPANY = API_ENDPOINT+'companies/{id}' // GET
+export const EP_COMPANY_CREATE = API_ENDPOINT+'companies' // POST
+export const EP_COMPANY_UPDATE = API_ENDPOINT+'companies/{id]' // PUT
+export const EP_COMPANY_ARCHIVE = API_ENDPOINT+'companies/{id}/archive' // PUT
+export const EP_COMPANY_DESTROY = API_ENDPOINT+'companies/{id}' // DELETE
 
 export default axios.create({
-  baseURL: BASE_URL,
-  timeout: TIMEOUT
+  baseURL: API_BASE_URL,
+  timeout: API_TIMEOUT
 })
