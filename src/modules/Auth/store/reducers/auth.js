@@ -1,15 +1,28 @@
 import { LOGIN_REQUEST, LOGIN_SUCCESS, LOGIN_FAIL } from '../actionTypes'
 
-const INITIAL_STATE =  {data: [], isLoading: false, isAuth: false, error: false, token: null, expired: 0}
+const INITIAL_STATE =  {
+  credentials: {
+    id: 0,
+    email: null,
+    password: null,
+  },
+  isLoading: false,
+  isAuth: true,
+  error: false,
+  token: null,
+  expired: 0
+}
 
 const auth = (state = INITIAL_STATE, action) => {
+  console.log(state)
   switch(action.type) {
     case LOGIN_REQUEST:
-      return {data: [], isLoading: false, isAuth: false, error: false, token: null, expired: 0}
+      console.log(action.credentials)
+      return {...state}
     case LOGIN_SUCCESS:
-      return {data: [], isLoading: false, isAuth: false, error: false, token: null, expired: 0}
+      return {...state}
     case LOGIN_FAIL:
-      return {data: [], isLoading: false, isAuth: false, error: false, token: null, expired: 0}
+      return {...state}
     default:
       return state
   }

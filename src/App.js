@@ -1,16 +1,20 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
 
 import './assets/css/custom.css'
-import Login from './modules/Auth/pages/screens/Login'
+import AuthenticationRequired from './modules/Auth/services/auth'
+import Navbar from './common/layouts/Navbar'
+import RouteView from './routes'
 
 class App extends Component {
   render() {
     return (
-      <div className='container'>
-        <Login />
+      <div>
+        <Navbar />
+        <RouteView />
       </div>
     )
   }
 }
 
-export default App
+export default withRouter(App)
