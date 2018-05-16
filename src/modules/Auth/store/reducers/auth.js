@@ -7,7 +7,7 @@ const INITIAL_STATE =  {
     password: null,
   },
   isLoading: false,
-  isAuth: true,
+  isAuth: false,
   error: false,
   token: null,
   expired: 0

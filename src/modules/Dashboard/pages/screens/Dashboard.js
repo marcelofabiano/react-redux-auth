@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 
+import Authenticated from '../../../Auth/services/Authenticated'
+
 class Dashboard extends Component {
   render() {
     return (
-      <div>
+      <Authenticated>
         <h1>Dashbard</h1>
-      </div>
+      </Authenticated>
     )
   }
 }
