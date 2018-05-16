@@ -14,7 +14,6 @@ const INITIAL_STATE =  {
 }
 
 const auth = (state = INITIAL_STATE, action) => {
-  console.log(state)
   switch(action.type) {
     case LOGIN_REQUEST:
       console.log(action.credentials)

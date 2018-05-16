@@ -4,5 +4,5 @@ import { Route } from 'react-router-dom'
 import Login from './screens/Login'
 
 export default [
-  <Route exact path='/login' component={Login} />
+  <Route key='login' exact path='/login' component={Login} />
 ]

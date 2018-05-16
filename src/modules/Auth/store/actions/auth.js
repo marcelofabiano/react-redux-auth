@@ -1,9 +1,6 @@
 import { LOGIN_REQUEST, LOGIN_SUCCESS, LOGIN_FAIL } from '../actionTypes'
 
 export const loginRequest = (credentials) => {
-
-  console.log(credentials)
-
   return { type: LOGIN_REQUEST, credentials }
 }
 
