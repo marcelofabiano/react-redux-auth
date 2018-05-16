@@ -3,7 +3,7 @@ import { withRouter } from 'react-router-dom'
 
 import './assets/css/custom.css'
 import Navbar from './common/layouts/Navbar'
-import RouteView from './init/routes'
+import RouteView from './config/routes'
 
 const offLayout = [
   '/login', '/register', 'forgot_password', '/404', '/403', '/select_company'

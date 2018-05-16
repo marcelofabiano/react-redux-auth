@@ -7,7 +7,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 
 import App from './App'
 import registerServiceWorker from './config/registerServiceWorker'
-import reducers from './init/reducers'
+import reducers from './config/reducers'
 
 const store = createStore(
   reducers,
